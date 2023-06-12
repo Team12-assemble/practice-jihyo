@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    header, footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header {
+      background-color: black;
+      color: white;
+      height: 100px;
+    }
+    nav {
+      background-color: rgb(77, 77, 77);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0px;
+    }
+    nav ul li {
+      margin: 16px 16px 16px 0px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 16px;
+    }
+    footer {
+      height: 50px;
+      background-color: rgb(77, 77, 77);
+      color: white;
+    }
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      background-image: url("./images/profile.jpeg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      border-radius: 50%;
+    }
+    .my-info {
+      margin-left: 16px;
+    }
+    section dl dd a {
+      text-decoration: none;
+    }
+    a {
+      color: black;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      color: khaki;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Profile</h1>
+  </header>
+  
+  <main>
+    <div class="profile-img">
+
+    </div>
+    <section class="my-info">
+      <dl>
+        <dt>기본 정보</dt>
+        <dd>이름 : 김지효</dd>
+        <dd>생년월일 : 1995.10.18</dd>
+        <dd>거주지 : 경기도 군포시</dd>
+        <br>
+        <dt>프로그래밍 언어</dt>
+        <dd>Javascript</dd>
+        <dd>Kotlin</dd>
+        <br>
+        <dt>TMI</dt>
+        <dd>MBTI : ISFP</dd>
+        <dd>취미 : 운동</dd>
+        <br>
+        <dt>etc</dt>
+        <dd><a href="mailto:wlgy33@naver.com">wlgy33@naver.com</a></dd>
+        <dd><a href="https://github.com/ji-dawn">Github</a></dd>
+        <dd>가고 싶은 회사 : 금방 망하지 않을 거 같은 또는 돈을 버는 스타트업</dd>
+      </dl>
+    </section>
+  </main>
+  <footer>
+    load more...
+  </footer>
+</body>
+</html>
