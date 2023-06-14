@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  background-color: black;
+  color: white;
+  height: 100px;
+}
+nav {
+  background-color: rgb(77, 77, 77);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+}
+nav ul li {
+  margin: 16px 16px 16px 0px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+}
+footer {
+  height: 50px;
+  background-color: rgb(77, 77, 77);
+  color: white;
+}
+.profile-img {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  background-image: url("./images/profile.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.my-info {
+  margin-left: 16px;
+}
+section ul {
+  list-style: none;
+}
+section ul li a {
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: khaki;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  .profile-img {
+    border-radius: 50%;
+  }
+}

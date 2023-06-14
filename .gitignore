@@ -1,2 +1,3 @@
 /강의자료
 *.pdf
+.DS_Store

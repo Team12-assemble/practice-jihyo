@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+  <style>
+    h1 {
+      color: red;
+    }
+    h1 {
+      /* color: blue !important */
+    }
+    p {
+      border: 2px solid red;
+      padding: 8px;
+      margin: 32px;
+    }
+    .p1 {
+      border-radius: 0;
+    }
+    .p2 {
+      border-radius: 5px;
+    }
+    .p3 {
+      border-radius: 10px;
+    }
+    .p4 {
+      border-radius: 25px;
+    }
+    .container {
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid black;
+    }
+    .item {
+      color: white;
+      background-color: blue;
+      padding: 8px;
+    }
+    .container2 {
+      margin-top: 32px;
+      border: 1px solid black;
+      display: flex;
+    }
+    .item2 {
+      width: 200px;
+      height: 200px;
+      margin: 16px;
+      border: 1px solid black;
+    }
+    .img-box {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('./images/clouds.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .gradient-box {
+      width: 200px;
+      height: 200px;
+      background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+    body {
+      position: relative;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid black;
+    }
+    .dotted-box {
+      width: 200px;
+      height: 200px;
+      border: 2px dotted black;
+    }
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      position: relative;
+      z-index: 2;
+    }
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      top: 150px;
+      left: 150px;
+      z-index: 1;
+    }
+    .inline-box {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+    .menu {
+      width: 100px;
+      height: 100px;
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 5px 5px gray;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      
+    }
+    .menu:hover .dropdown-content {
+      display: block;
+    }
+    .font-custom {
+      font-family: "Gasoek One", serif;
+      font-size: 48px;
+    }
+    .pagination {
+      list-style: none;
+      display: flex;
+    }
+    .pagination li {
+      margin: 8px;
+      padding: 10px;
+      background-color: grey;
+    }
+    .pagination li a {
+      text-decoration: none;
+      color: black;
+    }
+    .pagination li:active {
+      background-color: black;
+    }
+    .pagination li a:active {
+      
+      color: white;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- <h1 style="color: green;">안녕하세요</h1>
+  <p class="p1">123123</p>
+  <p class="p2">123123</p>
+  <p class="p3">123123</p>
+  <p class="p4">123123</p>
+
+  <div class="container">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+  </div>
+
+  <div class="container2">
+    <div class="item2">item1</div>
+    <div class="item2">item2</div>
+    <div class="item2">item3</div>
+    <div class="item2">item4</div>
+  </div> -->
+
+  <!-- <div class="img-box"></div> -->
+
+  <!-- <div class="gradient-box"></div> -->
+
+  <!-- <div class="box"></div> -->
+
+  <!-- <div class="dotted-box"></div> -->
+
+  <!-- <div class="box1">
+    <div class="box2"></div>
+  </div> -->
+  <!-- <div class="inline-box"></div> -->
+
+  <!-- <div class="menu"><span>메뉴</span>
+    <div class="dropdown-content">
+      <a href="#">항목 1</a>
+      <a href="#">항목 2</a>
+      <a href="#">항목 3</a>
+    </div>
+  </div> -->
+
+  <!-- <div class="font-custom">Here !!</div>
+  <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul> -->
+
+  <div class="grid-container">
+    <div class="item">내용 1</div>
+    <div class="item">내용 2</div>
+    <div class="item">내용 3</div>
+    <div class="item">내용 4</div>
+    <div class="item">내용 5</div>
+  </div>
+</body>
+</html>
