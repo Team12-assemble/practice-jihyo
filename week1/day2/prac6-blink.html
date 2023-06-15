@@ -6,7 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+    h1 {
+      animation: blink 1s step-end infinite;
+    }
   </style>
 </head>
 <body>
