@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      width: 300px;
+      border: 1px solid black;
+      position: absolute;
+    }
+    .visible {
+      visibility: visible;
+    }
+    .hidden {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <button id="prev" onclick="prev()">이전</button>
+  <button id="next" onclick="next()">다음</button>
+  <br>
+  <div class="img-box">
+    <img class="visible" src="../images/1.jpg" alt="이미지">
+    <img class="hidden" src="../images/2.jpg" alt="이미지">
+    <img class="hidden" src="../images/3.jpg" alt="이미지">
+    <img class="hidden" src="../images/4.jpg" alt="이미지">
+    <img class="hidden" src="../images/5.jpg" alt="이미지">
+    <img class="hidden" src="../images/6.jpg" alt="이미지">
+    <img class="hidden" src="../images/7.jpg" alt="이미지">
+    <img class="hidden" src="../images/8.jpg" alt="이미지">
+  </div>
+  <script>
+    let index = 1;
+    let images = document.querySelectorAll('img');
+    let prev = document.getElementById('prev');
+    let next = document.getElementById('next');
+
+    function nextImg() {
+      images[index-1].classList.replace('visible', 'hidden');
+      if (index === 8) {
+        index = 1;
+      } else {
+        index += 1;
+      }
+      images[index-1].classList.replace('hidden', 'visible');
+    }
+
+    function prevImg() {
+      images[index-1].classList.replace('visible', 'hidden');
+      if (index === 1) {
+        index = 8;
+      } else {
+        index -= 1;
+      }
+      images[index-1].classList.replace('hidden', 'visible'); 
+    }
+    prev.addEventListener('click', prevImg);
+    next.addEventListener('click', nextImg);
+  </script>
+</body>
+</html>

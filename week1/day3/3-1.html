@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    let x = 5 + 5;
+    let y = '5' + 2;
+    let z = 'hello' + 3;
+    console.log('x', x);
+    console.log('y', y);
+    console.log('z', z);
+    console.log(typeof x);
+    console.log(typeof y);
+    console.log(typeof z);
+
+    // Numbers
+    let length = 16;
+    let weight = 7.5;
+
+    // String
+    let color = 'Yello';
+    let lastName = 'Johnson';
+
+    // Boolean
+    let a = true;
+    let b = false;
+
+    // array object
+    const cars = ['Saab', 'Volvo', 'BMW'];
+
+    // Date object
+    const date = new Date('2023-06-16');
+
+    // function
+    function mult(p1, p2) {
+      return p1 * p2
+    }
+
+    console.log('mult function', mult(3, 5));
+
+    // object
+    const person = {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 50,
+      eyeColor: 'blue',
+      fullName: function() {
+        return this.firstName + ' ' + this.lastName;
+      }
+    }
+    console.log('person name', person.firstName + person.lastName);
+    console.log(person.fullName);
+    console.log(person.fullName());
+
+    // string method
+    let text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let textLength = text.length;
+    console.log('alphabet length',textLength);
+
+    let fruits = 'Apple, Banana, Kiwi';
+    let slicedFruit = fruits.slice(7, 13);
+    console.log('banana', slicedFruit);
+
+    let words = 'Please visit Microsoft';
+    let newWords = words.replace('Microsoft', 'W3Schools');
+    console.log(newWords);
+
+    let upper = 'Hello Everyone';
+    console.log(upper.toUpperCase);
+  </script>
+</body>
+</html>

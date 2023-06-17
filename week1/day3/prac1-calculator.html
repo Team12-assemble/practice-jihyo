@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .result {
+      width: 50%;
+      height: 32px;
+      border: 1px solid black;
+      margin-bottom: 8px;
+    }
+    .container {
+      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+      grid-gap: 8px;
+    }
+    .btn {
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="result"></div>
+  <div class="container">
+    <button class="btn">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <button class="btn">+</button>
+    <button class="btn">4</button>
+    <button class="btn">5</button>
+    <button class="btn">6</button>
+    <button class="btn">-</button>
+    <button class="btn">7</button>
+    <button class="btn">8</button>
+    <button class="btn">9</button>
+    <button class="btn">*</button>
+    <button class="btn">0</button>
+    <button class="btn">.</button>
+    <button class="btn">/</button>
+    <button class="btn">=</button>
+    <button class="btn clear">C</button>
+  </div>
+  <label for="">첫 번째 숫자 : </label><input type="number" id="num1">
+  <br>
+  <label for="">두 번째 숫자 : </label><input type="number" id="num2">
+  <button id="multBtn" onclick="division">나누기</button>
+  <div id="result"></div>
+  <script>
+    let num1 = document.getElementById('num1');
+    let num2 = document.getElementById('num2');
+    let result = document.getElementById('result');
+    let multBtn = document.getElementById('multBtn');
+
+    
+    function division() {
+      // 소수점 둘째자리까지 출력
+      let divisionResult = (num1.value / num2.value).toString().slice(0, 4);
+      result.innerHTML = `결과 : ${divisionResult}`;
+    }
+    multBtn.addEventListener('click', division)
+  </script>
+</body>
+</html>
