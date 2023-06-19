@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* header */
+header {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.header-brand-name {
+  color: #0e7159;
+  font-size: 30px;
+  font-weight: 500;
+}
+header .header-left, .header-right {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* main */
+main .main-wallpaper {
+  width: 1920px;
+  height: 768px;
+  background-image: url("./images/main-wallpaper_1920.png");
+}
+main .main-wallpaper .main-promo-words, .main-solution {
+  color: #fff;
+  text-align: center;
+}
+main .main-solution, .article-solution {
+  cursor: pointer;
+}
+/* main article */
+.article-card-container {
+  display: flex;
+}
