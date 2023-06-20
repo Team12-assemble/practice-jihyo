@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 200px;
+        color: white;
+        background-color: rgb(66, 151, 66);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>실시간 채팅</h1></header>
+    <main>
+      <section>
+        <div id="chat-list"></div>
+        <input id="input-user" type="text" placeholder="사용자명" />
+        <input id="input-msg" type="text" placeholder="메시지를 입력하세요" />
+        <button onclick="send">전송</button>
+      </section>
+    </main>
+    <script src="./prac2-livechat.js"></script>
+  </body>
+</html>
