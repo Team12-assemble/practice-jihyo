@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- react 17.0.2 CDN -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17.0.2/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"
+    ></script>
+    <!-- babel CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b29f947491.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/week1/day1/prac1.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="info"></div>
+    <script type="text/babel">
+      function Header() {
+        return React.createElement(
+          "header",
+          null,
+          React.createElement("h1", null, "Profile")
+        );
+      }
+      function Info() {
+        return React.createElement(
+          "section",
+          {
+            style: {
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            },
+          },
+          React.createElement(
+            "ul",
+            {
+              id: "my-info",
+            },
+            React.createElement("li", null, "김지효"),
+            React.createElement("li", null, "1995.10.18"),
+            React.createElement("br", null, null),
+            React.createElement("li", null, "Javascript"),
+            React.createElement("li", null, "Kotlin"),
+            React.createElement("br", null, null),
+            React.createElement("li", null, "MBTI : ISFP"),
+            React.createElement("li", null, "취미 : 운동"),
+            React.createElement(
+              "li",
+              null,
+              React.createElement(
+                "a",
+                { href: "mailto:wlgy33@naver.com" },
+                "e-mail : wlgy33@naver.com"
+              ),
+              React.createElement(
+                "a",
+                { href: "https://github.com/ji-dawn" },
+                React.createElement("i", { class: "fa-brands fa-github fa-2x" })
+              )
+            )
+          )
+        );
+      }
+      ReactDOM.render(<Header />, header);
+      ReactDOM.render(<Info />, info);
+    </script>
+  </body>
+</html>

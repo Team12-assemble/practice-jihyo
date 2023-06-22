@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 300px;
+      }
+    </style>
+    <!-- react 17.0.2 CDN -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17.0.2/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"
+    ></script>
+    <!-- babel CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="random"></div>
+    <script type="text/babel">
+      function RandomImage() {
+        const [random, setRandom] = React.useState(0);
+        const images = [
+          "/week1/images/1.jpg",
+          "/week1/images/2.jpg",
+          "/week1/images/3.jpg",
+          "/week1/images/4.jpg",
+          "/week1/images/5.jpg",
+          "/week1/images/6.jpg",
+          "/week1/images/7.jpg",
+          "/week1/images/8.jpg",
+        ];
+        const handleClick = () => {
+          let randomInt = Math.floor(Math.random() * 8);
+          console.log(randomInt);
+          setRandom(randomInt);
+        };
+        return (
+          <img
+            id="random-img"
+            src={images[random]}
+            alt="이미지"
+            onClick={handleClick}
+          />
+        );
+      }
+      ReactDOM.render(<RandomImage />, random);
+    </script>
+  </body>
+</html>
